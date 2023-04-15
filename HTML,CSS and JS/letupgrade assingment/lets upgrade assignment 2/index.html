@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example Animation</title>
+    <style>
+      /* Define the CSS animation */
+      .element {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        animation: move 5s linear infinite;
+      }
+
+      @keyframes move {
+        from {
+          left: 0;
+        }
+        to {
+          left: calc(100% - 50px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Add the element we want to animate to the HTML document -->
+    <div class="element"></div>
+  </body>
+</html>
